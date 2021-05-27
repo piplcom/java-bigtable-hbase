@@ -41,6 +41,7 @@ import com.google.cloud.bigtable.metrics.Timer.Context;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.protobuf.ByteString;
 import io.grpc.stub.StreamObserver;
+import io.perfmark.PerfMark;
 import java.util.Iterator;
 import java.util.List;
 import javax.annotation.Nullable;
@@ -58,6 +59,8 @@ public class DataClientVeneerApi implements DataClientWrapper {
 
   DataClientVeneerApi(BigtableDataClient delegate) {
     this.delegate = delegate;
+    System.out.println("Enabled perfmark");
+    PerfMark.setEnabled(true);
   }
 
   @Override

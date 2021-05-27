@@ -170,6 +170,12 @@ limitations under the License.
       </exclusions>
     </dependency>
 
+    <dependency>
+      <groupId>io.perfmark</groupId>
+      <artifactId>perfmark-api</artifactId>
+      <version>0.23.0</version>
+    </dependency>
+
     <!-- Test -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
