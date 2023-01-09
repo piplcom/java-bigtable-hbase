@@ -72,14 +72,14 @@ limitations under the License.
     <hbase2-metrics.version>3.2.6</hbase2-metrics.version>
 
     <!-- bytebuddy dependency version for resolving hbase backward incompatible changes -->
-    <byte.buddy.version>1.12.20</byte.buddy.version>
+    <byte.buddy.version>1.12.21</byte.buddy.version>
 
     <!-- testing dependency versions -->
     <commons-lang.version>2.6</commons-lang.version>
     <junit.version>4.13.2</junit.version>
     <junit-vintage-engine.version>5.9.1</junit-vintage-engine.version>
     <hamcrest.version>1.3</hamcrest.version>
-    <mockito.version>4.10.0</mockito.version>
+    <mockito.version>4.11.0</mockito.version>
     <beam.version>2.43.0</beam.version>
     <!-- referred from bigtable-beam-import and bigtable-emulator -->
     <guava.version>31.1-jre</guava.version>
