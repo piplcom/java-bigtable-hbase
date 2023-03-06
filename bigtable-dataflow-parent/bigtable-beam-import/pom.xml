@@ -18,7 +18,7 @@ limitations under the License.
   <parent>
     <groupId>com.google.cloud.bigtable</groupId>
     <artifactId>bigtable-dataflow-parent</artifactId>
-    <version>2.6.6-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
+    <version>2.7.3-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
@@ -147,7 +147,7 @@ limitations under the License.
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>bigtable-hbase-beam</artifactId>
-      <version>2.6.6-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
+      <version>2.7.3-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
       <exclusions>
         <exclusion>
           <groupId>org.apache.hbase</groupId>
@@ -159,7 +159,7 @@ limitations under the License.
     <dependency>
       <groupId>com.google.cloud.bigtable</groupId>
       <artifactId>bigtable-hbase-1.x-shaded</artifactId>
-      <version>2.6.6-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
+      <version>2.7.3-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
       <exclusions>
         <!-- exclude hbase-shaded-client since we are using hbase-shaded-server -->
         <exclusion>
@@ -202,6 +202,12 @@ limitations under the License.
       <groupId>org.apache.hbase</groupId>
       <artifactId>hbase-shaded-server</artifactId>
       <version>${hbase1.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
 
@@ -227,6 +233,12 @@ limitations under the License.
       <version>${commons-logging.version}</version>
     </dependency>
     <dependency>
+      <groupId>ch.qos.reload4j</groupId>
+      <artifactId>reload4j</artifactId>
+      <version>${reload4j.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>${beam-slf4j.version}</version>
@@ -236,8 +248,13 @@ limitations under the License.
       <artifactId>slf4j-log4j12</artifactId>
       <version>${beam-slf4j.version}</version>
       <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
-
 
     <!-- CVE Group: force update transitive deps to exclude CVEs -->
     <dependency>
@@ -261,7 +278,7 @@ limitations under the License.
     <dependency>
       <groupId>com.google.cloud.bigtable</groupId>
       <artifactId>bigtable-internal-test-helper</artifactId>
-      <version>2.6.6-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
+      <version>2.7.3-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -269,6 +286,12 @@ limitations under the License.
       <artifactId>hbase-shaded-testing-util</artifactId>
       <version>${hbase1.version}</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -444,7 +467,7 @@ limitations under the License.
       <plugin>
         <groupId>com.google.cloud.bigtable.test</groupId>
         <artifactId>bigtable-build-helper</artifactId>
-        <version>2.6.6-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
+        <version>2.7.3-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
         <executions>
           <execution>
             <id>verify-mirror-deps</id>
@@ -530,7 +553,7 @@ limitations under the License.
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
-            <version>3.0.0-M7</version>
+            <version>3.0.0-M9</version>
             <executions>
               <execution>
                 <id>beam-integration-test</id>

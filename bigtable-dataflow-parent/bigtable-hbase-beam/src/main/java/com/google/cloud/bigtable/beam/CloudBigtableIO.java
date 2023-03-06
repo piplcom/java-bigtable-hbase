@@ -347,7 +347,7 @@ public class CloudBigtableIO {
     protected List<SourceWithKeys> split(
         long regionSize, long desiredBundleSizeBytes, byte[] startKey, byte[] stopKey)
         throws IOException {
-      Preconditions.checkState(desiredBundleSizeBytes > 0);
+      Preconditions.checkState(desiredBundleSizeBytes >= 0);
       int splitCount = (int) Math.ceil((double) (regionSize) / (double) (desiredBundleSizeBytes));
 
       if (splitCount < 2 || stopKey.length == 0 || Bytes.compareTo(startKey, stopKey) >= 0) {
@@ -569,7 +569,8 @@ public class CloudBigtableIO {
                   "Source keys not in order: [%s, %s]",
                   Bytes.toStringBinary(startRow), Bytes.toStringBinary(stopRow)));
         }
-        Preconditions.checkState(estimatedSize > 0, "Source size must be positive", estimatedSize);
+        Preconditions.checkState(
+            estimatedSize >= 0, "Source size cannot be negative", estimatedSize);
       }
       this.estimatedSize = estimatedSize;
       SOURCE_LOG.debug("Source with split: {}.", this);

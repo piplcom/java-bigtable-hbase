@@ -1,5 +1,66 @@
 # Changelog
 
+## [2.7.2](https://github.com/googleapis/java-bigtable-hbase/compare/v2.7.1...v2.7.2) (2023-02-27)
+
+
+### Bug Fixes
+
+* **deps:** Re-add reload4j as a dependency in bigtable-hbase-beam ([#3985](https://github.com/googleapis/java-bigtable-hbase/issues/3985)) ([03de7ff](https://github.com/googleapis/java-bigtable-hbase/commit/03de7fff770e4dd764ac1df8064397fd8cdb2c09))
+
+
+### Dependencies
+
+* Update dependency com.google.protobuf:protobuf-java to v3.22.0 ([#3964](https://github.com/googleapis/java-bigtable-hbase/issues/3964)) ([1b96824](https://github.com/googleapis/java-bigtable-hbase/commit/1b968244ef77b960d08942cd31d58e4abaf41313))
+* Update dependency net.bytebuddy:byte-buddy to v1.12.23 ([#3946](https://github.com/googleapis/java-bigtable-hbase/issues/3946)) ([3591813](https://github.com/googleapis/java-bigtable-hbase/commit/3591813e371e0d693e2f47be0a46c2b7d167d93c))
+* Update dependency net.bytebuddy:byte-buddy to v1.13.0 ([#3955](https://github.com/googleapis/java-bigtable-hbase/issues/3955)) ([e4b356a](https://github.com/googleapis/java-bigtable-hbase/commit/e4b356a24163a4f03b6f12dd4d101b3bd98b8ad8))
+* Update dependency net.bytebuddy:byte-buddy to v1.14.0 ([#3968](https://github.com/googleapis/java-bigtable-hbase/issues/3968)) ([c9217a9](https://github.com/googleapis/java-bigtable-hbase/commit/c9217a9776d06f146cc57da072517a2b5d45184b))
+* Update dependency org.apache.logging.log4j:log4j-api to v2.20.0 ([#3972](https://github.com/googleapis/java-bigtable-hbase/issues/3972)) ([bfc997b](https://github.com/googleapis/java-bigtable-hbase/commit/bfc997b07742eef50643014f7b8fa09c25abb617))
+* Update dependency org.apache.logging.log4j:log4j-core to v2.20.0 ([#3973](https://github.com/googleapis/java-bigtable-hbase/issues/3973)) ([c9f1997](https://github.com/googleapis/java-bigtable-hbase/commit/c9f19972836fbbc2ff0c500ba20b6a2132b0951c))
+* Update dependency org.apache.logging.log4j:log4j-slf4j-impl to v2.20.0 ([#3974](https://github.com/googleapis/java-bigtable-hbase/issues/3974)) ([e7440fa](https://github.com/googleapis/java-bigtable-hbase/commit/e7440faed078893f3878ed605a90c7685355a732))
+* Update google-cloud-bigtable dependencies ([#3950](https://github.com/googleapis/java-bigtable-hbase/issues/3950)) ([904ba2c](https://github.com/googleapis/java-bigtable-hbase/commit/904ba2cc86ddaae12ce98f3df8d38e3b6d09c157))
+* Update google-cloud-bigtable dependencies ([#3956](https://github.com/googleapis/java-bigtable-hbase/issues/3956)) ([8891330](https://github.com/googleapis/java-bigtable-hbase/commit/8891330e8d4914104b61d763d4ade08838b5694d))
+* Update google-cloud-bigtable dependencies (2.19.1) ([#3963](https://github.com/googleapis/java-bigtable-hbase/issues/3963)) ([69fccba](https://github.com/googleapis/java-bigtable-hbase/commit/69fccba9f7d8a4f2a3b38a8dc95d3016a56c54a0))
+* Update google-cloud-bigtable dependencies (2.19.2) ([#3976](https://github.com/googleapis/java-bigtable-hbase/issues/3976)) ([e4c946e](https://github.com/googleapis/java-bigtable-hbase/commit/e4c946eb17ea107ea5effac2df3714e69e57800e))
+
+## [2.7.1](https://github.com/googleapis/java-bigtable-hbase/compare/v2.7.0...v2.7.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* Fix compatibility of CloudBigtableIO with the emulator env var ([#3940](https://github.com/googleapis/java-bigtable-hbase/issues/3940)) ([76bb401](https://github.com/googleapis/java-bigtable-hbase/commit/76bb40119dc4b70f67ac5e892f440e84b92c7612))
+
+
+### Dependencies
+
+* Update dependency com.fasterxml.jackson.core:jackson-databind to v2.14.2 ([#3938](https://github.com/googleapis/java-bigtable-hbase/issues/3938)) ([714e147](https://github.com/googleapis/java-bigtable-hbase/commit/714e1472771695ba5287cdecb34ba7ac053c5e0f))
+
+## [2.7.0](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.5...v2.7.0) (2023-01-25)
+
+
+### Features
+
+* Next release from main branch is 2.7.0 ([#3887](https://github.com/googleapis/java-bigtable-hbase/issues/3887)) ([6c3485d](https://github.com/googleapis/java-bigtable-hbase/commit/6c3485d93169cf9d8ecb7af1068fe8b9b2c8c3bc))
+
+
+### Bug Fixes
+
+* Making outer main public for export/templates ([#3900](https://github.com/googleapis/java-bigtable-hbase/issues/3900)) ([6bff440](https://github.com/googleapis/java-bigtable-hbase/commit/6bff440cac0b230788f718e7a104789f65a9c6b5))
+* Set client config log level to INFO ([#3876](https://github.com/googleapis/java-bigtable-hbase/issues/3876)) ([5b8ce5c](https://github.com/googleapis/java-bigtable-hbase/commit/5b8ce5c5cc1f43e876a3fe8d23015131bfb814a2))
+
+
+### Dependencies
+
+* Replace all transitive log4j deps with reload4j ([#3930](https://github.com/googleapis/java-bigtable-hbase/issues/3930)) ([29019ad](https://github.com/googleapis/java-bigtable-hbase/commit/29019ad48cb832920699b339545eedf370ddfd04))
+* Update bigtable version to 2.17.1, shared config to 1.5.5 ([#3889](https://github.com/googleapis/java-bigtable-hbase/issues/3889)) ([7729556](https://github.com/googleapis/java-bigtable-hbase/commit/77295564404119146e4598702af888c1d809fefd))
+* Update dependency com.google.protobuf:protobuf-java to v3.21.11 ([#3881](https://github.com/googleapis/java-bigtable-hbase/issues/3881)) ([1ac8692](https://github.com/googleapis/java-bigtable-hbase/commit/1ac8692136820d072091481a1f749bb92193764c))
+* Update dependency com.google.protobuf:protobuf-java to v3.21.12 ([#3896](https://github.com/googleapis/java-bigtable-hbase/issues/3896)) ([5d0f431](https://github.com/googleapis/java-bigtable-hbase/commit/5d0f43140d7abf6dc4fbee2cf649111097dae7aa))
+* Update dependency net.bytebuddy:byte-buddy to v1.12.20 ([#3898](https://github.com/googleapis/java-bigtable-hbase/issues/3898)) ([58a4531](https://github.com/googleapis/java-bigtable-hbase/commit/58a4531863ea0dd6e1f9f60e4062f5046b6488e4))
+* Update dependency net.bytebuddy:byte-buddy to v1.12.21 ([#3905](https://github.com/googleapis/java-bigtable-hbase/issues/3905)) ([6f68e94](https://github.com/googleapis/java-bigtable-hbase/commit/6f68e94a3d90605b712555faebaefa91c52a40c6))
+* Update dependency net.bytebuddy:byte-buddy to v1.12.22 ([#3911](https://github.com/googleapis/java-bigtable-hbase/issues/3911)) ([42a87a7](https://github.com/googleapis/java-bigtable-hbase/commit/42a87a715e3aff160b6fbbc04615d3dc092cb3eb))
+* Update dependency org.junit.platform:junit-platform-launcher to v1.9.2 ([#3907](https://github.com/googleapis/java-bigtable-hbase/issues/3907)) ([787e83c](https://github.com/googleapis/java-bigtable-hbase/commit/787e83c36c7b05f805ec8dcfe050bf4d7fadc9c3))
+* Update dependency org.junit.vintage:junit-vintage-engine to v5.9.2 ([#3908](https://github.com/googleapis/java-bigtable-hbase/issues/3908)) ([1b19251](https://github.com/googleapis/java-bigtable-hbase/commit/1b19251df62d0ce29bd8e2a946656e9e1077df77))
+* Update google-cloud-bigtable dependencies ([#3934](https://github.com/googleapis/java-bigtable-hbase/issues/3934)) ([841bb29](https://github.com/googleapis/java-bigtable-hbase/commit/841bb29a4f86dc9915200f5550bb90f117293be6))
+
 ## [2.6.5](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.4...v2.6.5) (2022-12-08)
 
 
