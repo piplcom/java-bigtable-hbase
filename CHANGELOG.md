@@ -34,7 +34,7 @@
 
 * Update dependency com.fasterxml.jackson.core:jackson-databind to v2.14.2 ([#3938](https://github.com/googleapis/java-bigtable-hbase/issues/3938)) ([714e147](https://github.com/googleapis/java-bigtable-hbase/commit/714e1472771695ba5287cdecb34ba7ac053c5e0f))
 
-## [2.7.0](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.5...v2.7.0) (2023-01-25)
+## [2.7.0](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.5-10m-idle-timeout-SNAPSHOT...v2.7.0) (2023-01-25)
 
 
 ### Features
@@ -61,7 +61,7 @@
 * Update dependency org.junit.vintage:junit-vintage-engine to v5.9.2 ([#3908](https://github.com/googleapis/java-bigtable-hbase/issues/3908)) ([1b19251](https://github.com/googleapis/java-bigtable-hbase/commit/1b19251df62d0ce29bd8e2a946656e9e1077df77))
 * Update google-cloud-bigtable dependencies ([#3934](https://github.com/googleapis/java-bigtable-hbase/issues/3934)) ([841bb29](https://github.com/googleapis/java-bigtable-hbase/commit/841bb29a4f86dc9915200f5550bb90f117293be6))
 
-## [2.6.5](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.4...v2.6.5) (2022-12-08)
+## [2.6.5-10m-idle-timeout-SNAPSHOT](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.4...v2.6.5-10m-idle-timeout-SNAPSHOT) (2022-12-08)
 
 
 ### Dependencies

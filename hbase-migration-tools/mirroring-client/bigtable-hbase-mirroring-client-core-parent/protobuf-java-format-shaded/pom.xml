@@ -93,7 +93,7 @@
       <plugin>
         <groupId>com.google.cloud.bigtable.test</groupId>
         <artifactId>bigtable-build-helper</artifactId>
-        <version>2.7.3-10m-idle-timeout-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
+        <version>2.6.5-10m-idle-timeout-SNAPSHOT</version> <!-- {x-version-update:bigtable-client-parent:current} -->
         <executions>
           <execution>
             <id>verify-shaded-jar-entries</id>

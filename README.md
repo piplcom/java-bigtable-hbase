@@ -46,18 +46,18 @@ which makes it easy for development teams to get started.
   <dependency>
     <groupId>com.google.cloud.bigtable</groupId>
     <artifactId>bigtable-hbase-1.x</artifactId>
-    <version>2.6.5</version>
+    <version>2.6.5-10m-idle-timeout-SNAPSHOT</version>
   </dependency>
   ```
 
   Gradle:
   ```Groovy
-  compile 'com.google.cloud.bigtable:bigtable-hbase-1.x:2.6.5'
+  compile 'com.google.cloud.bigtable:bigtable-hbase-1.x:2.6.5-10m-idle-timeout-SNAPSHOT'
   ```
 
   SBT:
   ```Scala
-  libraryDependencies += "com.google.cloud.bigtable" % "bigtable-hbase-1.x" % "2.6.5"
+  libraryDependencies += "com.google.cloud.bigtable" % "bigtable-hbase-1.x" % "2.6.5-10m-idle-timeout-SNAPSHOT"
   ```
 [//]: # ({x-version-update-end})
 
@@ -89,7 +89,7 @@ If you are _not_ using the shaded Bigtable HBase Client artifact, you need to de
 <dependency>
     <groupId>com.google.cloud.bigtable</groupId>
     <artifactId>bigtable-hbase-1.x</artifactId>
-    <version>2.6.5</version>
+    <version>2.6.5-10m-idle-timeout-SNAPSHOT</version>
 </dependency>
 ```
 [//]: # ({x-version-update-end})
@@ -126,7 +126,7 @@ shaded artifact; i.e. nothing additional for you to do.
 <dependency>
     <groupId>com.google.cloud.bigtable</groupId>
     <artifactId>bigtable-hbase-1.x-shaded</artifactId>
-    <version>2.6.5</version>
+    <version>2.6.5-10m-idle-timeout-SNAPSHOT</version>
 </dependency>
 ```
 [//]: # ({x-version-update-end})
@@ -182,7 +182,7 @@ If you are _not_ using the shaded Bigtable HBase Client artifact, you need to de
 <dependency>
     <groupId>com.google.cloud.bigtable</groupId>
     <artifactId>bigtable-hbase-1.x</artifactId>
-    <version>2.6.5</version>
+    <version>2.6.5-10m-idle-timeout-SNAPSHOT</version>
 </dependency>
 ```
 [//]: # ({x-version-update-end})
@@ -218,7 +218,7 @@ shaded artifact; i.e. nothing additional for you to do.
 <dependency>
     <groupId>com.google.cloud.bigtable</groupId>
     <artifactId>bigtable-hbase-1.x-shaded</artifactId>
-    <version>2.6.5</version>
+    <version>2.6.5-10m-idle-timeout-SNAPSHOT</version>
 </dependency>
 ```
 [//]: # ({x-version-update-end})
