@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.6.5](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.4...v2.6.5) (2022-12-08)
+## [2.6.5-longer-idle-timeout-SNAPSHOT](https://github.com/googleapis/java-bigtable-hbase/compare/v2.6.4...v2.6.5-longer-idle-timeout-SNAPSHOT) (2022-12-08)
 
 
 ### Dependencies

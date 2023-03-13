@@ -699,6 +699,8 @@ public class BigtableHBaseVeneerSettings extends BigtableHBaseSettings {
           .retrySettings()
           .setTotalTimeout(operationTimeouts.getOperationTimeout().get());
     }
+
+    readRowsSettings.setIdleTimeout(Duration.ofMinutes(15));
   }
 
   private void configureRetryableCallSettings(
