@@ -46,11 +46,11 @@ limitations under the License.
   <distributionManagement>
     <snapshotRepository>
       <id>artifact-registry</id>
-      <url>artifactregistry://us-maven.pkg.dev/cloud-bigtable-ecosystem/java-bigtable-hbase-10m-idle-timeout</url>
+      <url>artifactregistry://us-maven.pkg.dev/cloud-bigtable-ecosystem/java-bigtable-hbase-longer-idle-timeout</url>
     </snapshotRepository>
     <repository>
       <id>artifact-registry</id>
-      <url>artifactregistry://us-maven.pkg.dev/cloud-bigtable-ecosystem/java-bigtable-hbase-10m-idle-timeout</url>
+      <url>artifactregistry://us-maven.pkg.dev/cloud-bigtable-ecosystem/java-bigtable-hbase-longer-idle-timeout</url>
     </repository>
   </distributionManagement>
 
