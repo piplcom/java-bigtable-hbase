@@ -700,7 +700,17 @@ public class BigtableHBaseVeneerSettings extends BigtableHBaseSettings {
           .setTotalTimeout(operationTimeouts.getOperationTimeout().get());
     }
 
-    readRowsSettings.setIdleTimeout(Duration.ofMinutes(15));
+    Duration idleTimeoutDuration;
+    //TODO kobi this is a hack to prevent idleTimeoutException
+    String kobiTimeout = configuration.get("kobi.watchdog.idle.timeout.minute");
+    if (kobiTimeout != null && !kobiTimeout.isEmpty()) {
+      idleTimeoutDuration = Duration.ofMinutes(Integer.parseInt(kobiTimeout));
+    } else {
+      idleTimeoutDuration = Duration.ofMinutes(30);
+    }
+    LOG.info("idle timeout seconds = " + idleTimeoutDuration.getSeconds());
+
+    readRowsSettings.setIdleTimeout(idleTimeoutDuration);
   }
 
   private void configureRetryableCallSettings(
